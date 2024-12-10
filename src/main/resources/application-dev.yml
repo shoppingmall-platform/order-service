@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    uri: jdbc:h2:file:./:testdb;MODE=MYSQL
+    username: SU
+    password: 1111
+
+  jpa:
+    database-platform: "org.hibernate.dialect.H2Dialect"
+    show-sql: false
+    hibernate:
+      ddl-auto: create-drop
+
+  h2:
+    console:
+      enabled: true
